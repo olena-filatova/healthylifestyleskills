@@ -1,0 +1,23 @@
+{
+  "skill_name": "adaptive-weekly-menu",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I need help planning my meals for the week. I'm in London, I have type 2 diabetes and I'm trying to lose a bit of weight. I eat pretty much anything — not vegetarian. I live alone, work from home Mon-Thu and go into the office on Fridays. I'm not a great cook but I can manage basic stuff. I don't want to spend more than about £60 a week on food and I shop at Tesco or Lidl. I usually eat cereal for breakfast, grab whatever's in the fridge for lunch, and cook something simple for dinner most nights. I do get a takeaway on Fridays because I'm tired after the commute. Can you help?",
+      "expected_output": "Should ask clarifying questions first (not jump to a meal plan), covering any gaps in info, then produce: a user profile summary, a weekly table with breakfast/lunch/dinner/notes, a cooking strategy with batch cooking callouts, an organised shopping list under £60 for Tesco/Lidl, and a brief explanation of how the plan supports blood sugar management and weight loss. The plan should be low-GI-leaning, practical, keep Friday dinner as a treat or low-effort option, and not be overly restrictive.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "can you help me sort out food for the week? I'm in Dublin, Ireland. I'm pescatarian (eat fish and seafood, no meat). My husband eats everything so ideally meals that work for both of us or I can adapt easily. We have two kids aged 6 and 9 — they're fairly fussy but eat pasta, fish fingers, eggs, rice. I work part time, Tues/Wed/Thurs. I'm trying to eat more fibre and less processed stuff generally. Budget is around €80 for the week, we shop at Dunnes and sometimes Aldi. I'm a decent cook but I don't want to spend more than 30-40 mins on a weeknight meal.",
+      "expected_output": "Should ask a few targeted clarifying questions if anything is unclear (e.g. any allergies, specific health conditions), then produce: a family-friendly weekly plan where dinners work for a pescatarian + meat-eating adult + fussy kids, a shopping list suited to Irish shops (Dunnes/Aldi), a realistic cooking strategy respecting the 30-40 min limit on weeknights, and a notes column that flags kid-friendly adaptations or easy protein swaps for the husband.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm trying to eat better but I honestly have very little time or energy. I'm in Manchester. I work long shifts as a nurse — three 12-hour shifts a week, usually Tue/Wed/Thu. I get home exhausted and just want something quick. The other days I'm a bit more relaxed. I eat pretty much anything, no allergies. I live with my partner who is vegetarian, so if we can have mostly veggie meals with the option for me to add meat that'd be great. Budget about £50 a week, we shop at Asda. Main goal is just to eat something proper and not rely on toast or ready meals every night after a shift.",
+      "expected_output": "Should ask brief clarifying questions (health conditions? any foods to avoid? cooking confidence of partner?), then produce a plan that is explicitly designed around the shift pattern — very easy or no-cook meals on Tue/Wed/Thu nights, with more substantial cooking on days off. Should include mostly vegetarian meals with optional protein additions for the nurse. Shopping list for Asda under £50. Cooking strategy should clearly call out which days are 'low effort' and which are 'cook ahead' days.",
+      "files": []
+    }
+  ]
+}
