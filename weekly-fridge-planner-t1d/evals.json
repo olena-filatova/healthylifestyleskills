@@ -1,0 +1,59 @@
+{
+  "skill_name": "weekly-fridge-planner",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Here's what we have in the fridge: half a block of cheddar, 4 eggs, some leftover roast chicken (about 300g), a bag of spinach that needs using up, 2 courgettes, a punnet of cherry tomatoes, full fat Greek yogurt (500g tub, half used), cheddar, some butter, whole milk. In the freezer: a bag of king prawns, 2 salmon fillets. Pantry: wholemeal pasta, brown rice, tinned chickpeas x2, tinned tomatoes x3, olive oil, onions, garlic, mixed dried herbs, cumin, smoked paprika, soy sauce, wholemeal bread. Can you plan this week's meals and make a shopping list for whatever else we need?",
+      "expected_output": "A 7-day meal plan (Monday-Sunday) with breakfast, lunch, and dinner for each day. Meals should use up the spinach, courgettes, and roast chicken early in the week. Approximate carb content noted per meal. A shopping list organised by Ocado category with specific, wholegrain/full-fat products listed.",
+      "files": [],
+      "assertions": [
+        "The meal plan covers all 7 days (Monday through Sunday)",
+        "Breakfast, lunch, and dinner are provided for each day",
+        "The spinach and courgettes (fresh items needing using up) appear in the first 2-3 days of the plan",
+        "The leftover roast chicken is incorporated into a meal",
+        "At least one meal uses the king prawns and one uses the salmon",
+        "Approximate carb content is noted for meals",
+        "The shopping list is organised by category (e.g. Fresh Produce, Meat & Fish, Dairy)",
+        "Shopping list specifies wholegrain/wholemeal variants (not white bread, white pasta, white rice)",
+        "Shopping list specifies full fat dairy (not low fat)",
+        "No low-fat or diet products appear in the meal plan or shopping list",
+        "Weekday dinners are described as quick (under 40 min) and weekend meals allow more time",
+        "British spelling is used throughout (courgette not zucchini, etc.)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I haven't done a shop in ages - fridge is pretty bare. Just got: 6 eggs, some parmesan, a lemon, a bit of butter, full fat milk, a yogurt. Freezer: frozen peas, frozen spinach. Cupboard: dried spaghetti (white unfortunately), olive oil, tinned tomatoes x4, garlic, onion, dried lentils, basmati rice, soy sauce, mixed herbs. Can you plan the week and tell me what to order from Ocado?",
+      "expected_output": "A 7-day meal plan making the best use of what's available (eggs, pasta, lentils, tinned tomatoes will feature heavily early in the week). Shopping list for Ocado specifying wholegrain upgrades where possible. Dietary guidelines respected throughout.",
+      "files": [],
+      "assertions": [
+        "The meal plan covers all 7 days",
+        "Eggs feature prominently early in the week given they're fresh",
+        "The plan acknowledges the white pasta and suggests or plans to upgrade to wholegrain when new stock arrives",
+        "Lentils are incorporated into at least one meal",
+        "Shopping list includes protein sources (meat, fish, or both) to fill gaps",
+        "Shopping list specifies wholegrain pasta or rice as an upgrade recommendation",
+        "Full fat dairy items are on the shopping list",
+        "Fresh vegetables are a significant part of the shopping list",
+        "Carb content guidance is given for at least some meals",
+        "The response notes which meals are stretching limited ingredients and which will feel more complete after the shop"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I've already planned the menu for the week - we're having: Mon: lentil soup with crusty bread. Tue: baked salmon with roasted veg and quinoa. Wed: chicken stir fry with brown rice and lots of veg. Thu: aubergine and chickpea curry with brown rice. Fri: prawn pasta with courgette. Sat: slow roast lamb shoulder with roasted root veg and green beans. Sun: leftover lamb with salad and hummus. I've got: onions, garlic, olive oil, tinned tomatoes x2, soy sauce, curry paste, rice, dried pasta, tinned chickpeas x1. Can you just make me a shopping list and then add everything to my Ocado basket?",
+      "expected_output": "A shopping list derived from the provided menu, accounting for what's already in the pantry. Then clear instructions/actions for adding each item to Ocado via the browser, with a basket summary at the end.",
+      "files": [],
+      "assertions": [
+        "The shopping list correctly excludes items already in the pantry (onions, garlic, olive oil, tinned tomatoes, soy sauce, rice, pasta, curry paste, tinned chickpeas)",
+        "The shopping list includes all proteins: lentils (red or green), salmon fillets, chicken, lamb shoulder, prawns",
+        "The shopping list includes fresh vegetables needed: courgette, aubergine, root vegetables (e.g. parsnips, carrots), green beans, salad leaves",
+        "The shopping list specifies wholemeal/wholegrain bread for the lentil soup",
+        "Quinoa is on the shopping list",
+        "The shopping list is organised by Ocado category",
+        "The skill attempts to navigate to Ocado or describes the steps it will take to add items to the basket",
+        "The response includes a note asking Lena to confirm before checkout"
+      ]
+    }
+  ]
+}
